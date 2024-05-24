@@ -1,3 +1,4 @@
+import { Toaster } from "react-hot-toast";
 import { Link, Outlet } from "react-router-dom";
 
 function Layout() {
@@ -71,6 +72,7 @@ function Layout() {
 
       <main>
         <Outlet />
+        <Toaster position="bottom-center" reverseOrder={false} />
       </main>
     </>
   );
